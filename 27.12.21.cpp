@@ -37,3 +37,48 @@ int main() {
 		sum = t1 + t2;
 	}
 }
+
+
+
+
+
+
+новое задание 
+#include <iostream>
+#include <windows.h>
+
+int main() {
+	SetConsoleCP(1251);
+	SetConsoleOutputCP(1251);
+
+	/*int n;
+	int g;
+	int f;
+	int i = 10;
+	std::cout<< "Введите число:" << std::endl;
+	std::cin >> n;
+	int x = n % 10;
+	std::cout << x << std::endl;
+	n /= 10;
+	n = n / 10;
+	x = n % 10;
+	std::cout << x << std::endl;
+	while (x > 0) {
+		g = x * i;
+		f = g + x;
+		std::cout << f << std::endl;
+		break;
+	}*/
+	int n;
+	std::cin >> n;
+	int g = 0;
+
+	while (n) {
+		g = g * 10 + n % 10;
+		n /= 10;
+	}
+	std::cout << g << std::endl;
+	
+
+	
+}
