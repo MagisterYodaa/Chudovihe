@@ -1,3 +1,4 @@
+задание N1
 #include <iostream>
 #include <windows.h>
 
@@ -43,7 +44,7 @@ int main() {
 
 
 
-новое задание 
+ задание N2
 #include <iostream>
 #include <windows.h>
 
@@ -82,3 +83,7 @@ int main() {
 
 	
 }
+
+
+задание N3
+
