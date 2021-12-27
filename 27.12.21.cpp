@@ -159,15 +159,16 @@ int main() {
 	std::cout << "Vvedite kolichestvo chisel: ";
 	std::cin >> a;
 	double b[1000];
-	int count = 0;
-	int sum = 0;
+	int d = 0;
+	int v = 0;
 	for (int i = 0; i < a; i++) {
 		std::cin >> b[i];
-		sum += b[i];
-		count++;
+		v += b[i];
+		d++;
 	}
 
-	double total = sum / count;
+	double total = v / d;
 	std::cout << total << std::endl;
+}
 }
 Задание N7
