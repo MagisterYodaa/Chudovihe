@@ -113,4 +113,22 @@ int main() {
 }
 
 Задание N4
+#include <iostream>
+#include <windows.h>
 
+int main()
+{
+    SetConsoleCP(1251);
+    SetConsoleOutputCP(1251);
+    int a;
+    int b = 0;
+    int i = 0;
+    std::cout << "Введите число:" << std::endl;
+    std::cin >> a;
+    while (i <= a){
+        b = i + b;
+        std::cout << b << std::endl;
+        i++;
+    }
+}
+Задание N5
