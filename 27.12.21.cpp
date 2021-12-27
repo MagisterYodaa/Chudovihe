@@ -86,4 +86,31 @@ int main() {
 
 
 задание N3
+#include <iostream>
+#include <windows.h>
+
+int main() {
+	SetConsoleCP(1251);
+	SetConsoleOutputCP(1251);
+
+	int n;
+	std::cin >> n;
+	int g = 0;
+
+	while (n) {
+		g = g * 10 + n % 10;
+		n /= 10;
+	}
+	std::cout << g << std::endl;
+	if (n = g) {
+		std::cout << "Это ПАЛИНДРОМ" << std::endl;
+	}
+	else if(n != g)
+	{
+		std::cout << "Это не ПАЛИНДРОМ" << std::endl;
+	}
+
+}
+
+Задание N4
 
