@@ -84,3 +84,26 @@ int main() {
 	int total = sum / count;
 	std::cout << total << std::endl;
 }
+Задание N3
+
+#include <iostream>
+#include <Windows.h>
+
+int main() {
+	srand(4784);
+	const int n = 3;
+	int a[n][n];
+	int b = 0;
+	for (int i = 0; i < 3; i++) {
+		for (int j = 0; j < 3; j++) {
+			a[i][j] = rand();
+			if (i + j >= n - 1) {
+				b += a[i][j];
+				
+			}
+			std::cout << a[i][j] << "\t";
+		}
+		std::cout << "\n";
+	}
+	std::cout << b << std::endl;
+}
