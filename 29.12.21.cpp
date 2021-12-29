@@ -48,4 +48,39 @@ int main() {
 	std::cout << sum << std::endl;
 }
 Задание N6,9
-	
+	#include <iostream>
+#include <Windows.h>
+
+int main() {
+	srand(4784);
+	int arr[10];
+	for (int i = 0; i < 10; i++) {
+		arr[i] = rand();
+		std::cout << arr[i] << std::endl;
+	}
+	int min = arr[0];
+	int max = arr[0];
+	for (int i = 1; i < 10; i++) {
+		if (arr[i] < min) {
+			min = arr[i];
+		}
+	}
+	std::cout << min << std::endl;
+	for (int i = 1; i < 10; i++) {
+		if (arr[i] > max) {
+			max = arr[i];
+		}
+	}
+	std::cout << max << std::endl;
+
+	int sum = 0;
+	int count = 0;
+	for (int i = 0; i < 10; i++) {
+		if(arr[i] != min && max) {
+			sum += arr[i];
+			count++;
+		}
+	}
+	int total = sum / count;
+	std::cout << total << std::endl;
+}
