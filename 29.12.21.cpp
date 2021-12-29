@@ -47,4 +47,5 @@ int main() {
 	}
 	std::cout << sum << std::endl;
 }
-Задание N
+Задание N6,9
+	
