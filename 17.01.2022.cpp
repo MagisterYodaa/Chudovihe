@@ -33,20 +33,18 @@ int main() {
 int main() {
     SetConsoleCP(1251);
     SetConsoleOutputCP(1251);
-	for (int y = 0; y <= 8; y++)
-	{
-		for (int x = 0; x <= 8; x++) {
-			if (x % 2 == 0) {
-				std::cout << "    ";
-			}
-			else std::cout << "*";
-		}
+    for (int y = 0; y <= 7; y++)
+    {
+        if (y % 2 == 0)
+            for (int x = 1; x <= 4; x++)
+                std::cout << "* " << "  ";
+        else
+            for (int x = 1; x <= 4; x++)
+                std::cout << "  " << "* ";
 
-		std::cout << "* " << std::endl;
-	}
-
-
-	return 0;
+        std::cout << std::endl;
+    }
+    return 0;
 }
 
 
