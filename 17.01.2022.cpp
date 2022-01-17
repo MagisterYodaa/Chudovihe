@@ -79,3 +79,33 @@ int main() {
 задание 4 двоичные
 
 
+
+
+
+
+
+
+
+
+задание 5 минимальное число 
+#include <iostream>
+#include <Windows.h>
+#include <string>
+
+int main(){
+	SetConsoleCP(1251);
+	SetConsoleOutputCP(1251);
+	int num[5];
+	for (int i = 0; i < 5; i++) {
+		std::cout << "num[" << i << "] -> ";
+		std::cin >> num[i];
+	}
+
+	int min = num[0];
+
+	for (int i = 0; i < 5; i++) {
+		if (min >= num[i])min = num[i];
+	}
+	std::cout << "Минимальное число -> " << min << "\n";
+
+}
