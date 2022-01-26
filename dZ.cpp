@@ -59,3 +59,57 @@ int main() {
 
 	output(newarray, size);
 }
+
+Задание №1
+#include <iostream> 
+#include <string> 
+ 
+using namespace std; 
+ 
+void output(int* arr, int size) { 
+    for (int i = 0; i < size; i++) { 
+        cout << arr[i] << ' '; 
+    } 
+    cout << "\n"; 
+} 
+ 
+int findMin(int* arr, int size) { 
+    int min = arr[0]; 
+    int indexMin = 0; 
+    for (int i = 0; i < size; i++) { 
+        if (min > arr[i]) { 
+            min = arr[i]; 
+            indexMin = i; 
+        } 
+    } 
+ 
+    return indexMin; 
+} 
+ 
+int main() 
+{ 
+    
+    setlocale(0, "rus"); 
+    srand(time(0)); 
+    const int SIZE = 10; 
+    int arr[SIZE]; 
+    int newArray[SIZE]; 
+    int minEl; 
+    for (int i = 0; i < SIZE; i++) { 
+        arr[i] = rand() % 1000; 
+    } 
+    output(arr, SIZE); 
+ 
+    for (int i = 0; i < SIZE; i++) { 
+        minEl = findMin(arr, SIZE); 
+        newArray[i] = arr[minEl]; 
+        arr[minEl] = INT_MAX; 
+    } 
+ 
+    output(newArray, SIZE); 
+ 
+    cout << newArray[0] << " " << newArray[1]; 
+    }
+
+Задание №2
+
