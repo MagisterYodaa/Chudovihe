@@ -112,4 +112,58 @@ int main()
     }
 
 Задание №2
+#include <iostream>
+#include <Windows.h>
 
+
+void output(int* arr, int size) {
+	for (int i = 0; i < size; i++) {
+		std::cout << arr[i] << ' ';
+	}
+}
+
+
+int findMin(int* arr, int size) {
+	int min = arr[0];
+	int indexMin = 0;
+	for (int i = 0; i < size; i++) {
+		if (min > arr[i]) {
+			min = arr[i];
+			indexMin = 1;
+		}
+	}
+
+	return indexMin;
+}
+
+int main() {
+	SetConsoleCP(1251);
+	SetConsoleOutputCP(1251);
+
+	const int size = 10;
+	int arr[size];
+
+	int newarray[size];
+	int minEL;
+
+	for (int i = 0; i < size; i++) {
+		arr[i] = rand() % 10;
+	}
+	output(arr, size);
+	
+
+	for (int i = 0; i < size - 1; i++) {
+		bool flag = true;
+		for (int j = 1; j < size; j++) {
+			if (arr[i] == arr[j] && i != j) {
+				flag = false;
+				break;
+			}
+			
+		}
+		if (flag) {
+			std::cout << arr[i] << std::endl;
+		}
+	}
+
+}
