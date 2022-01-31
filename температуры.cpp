@@ -98,4 +98,29 @@ int main()
 
 Задание 6
 
+#include <iostream>
+#include <string>
+
+void value(int a , int h) {
+    float b;
+    if (a > h) {
+        std::cout << a << std::endl;
+    }
+    else if (h > a) {
+        std::cout << h << std::endl;
+    }
+}
+int main()
+{
+    setlocale(0, "rus");
+    std::cout << "ВВедите 2 числа: ";
+    float a , h;
+    std::cin >> a;
+    std::cin >> h;
+    value(a , h);
+}
+
+
+Задание 7
+	
 	
