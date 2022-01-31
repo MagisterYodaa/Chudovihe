@@ -123,4 +123,31 @@ int main()
 
 Задание 7
 	
+#include <iostream>
+#include <string>
+
+void value(int a , int h) {
+    float b;
+    if (a > h) {
+        std::cout << ">" << std::endl;
+    }
+    else if (a < h) {
+        std::cout << "<" << std::endl;
+    }
+    else if (a = h) {
+        std::cout << "=" << std::endl;
+    }
+}
+int main()
+{
+    setlocale(0, "rus");
+    std::cout << "ВВедите 2 числа: ";
+    float a , h;
+    std::cin >> a;
+    std::cin >> h;
+    value(a , h);
+}
+
+Задание 8
+
 	
