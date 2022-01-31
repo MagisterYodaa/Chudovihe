@@ -149,5 +149,36 @@ int main()
 }
 
 Задание 8
+#include <iostream>
+#include <string>
+#include <Windows.h>
 
+int factorial(int a) {
+    int total;
+    if (a == 0) return 1;
+    total = a * factorial(a - 1);
+    return total;
+}
+    int main() {
+        SetConsoleCP(1251);
+        SetConsoleOutputCP(1251);
+        std::cout << "Таблица факториалов: " << std::endl;
+        for (int i = 1; i < 8; i++) {
+            std::cout << i << "->";
+            std::cout << factorial(i) << std::endl;
+        }
+}
+
+Задание 9
+	
+	
+	
+	
+	
+	
+Задание 10
+	
+	
+	
+	
 	
