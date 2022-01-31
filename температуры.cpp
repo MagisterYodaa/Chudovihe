@@ -1,31 +1,43 @@
+
+задание 1
 #include <iostream>
-#include <Windows.h>
+#include <string>
 
-using namespace std;
-
-int main() {
-	int user;
-	int cels;
-	int answcels;
-	int answfareng;
-	int foreng;
-	SetConsoleCP(1251);
-	SetConsoleOutputCP(1251);
-	cout << "Выбирите тип градуса! o_O" << endl;
-	cout << "Нажмите 1 чтобы выбрать Цельсия ^(O_o)^" << endl;
-	cout << "Нажмите 2 чтобы выбрать Фарингейт (O__o)" << endl;
-
-	cin >> user;
-	if (user == 1) {
-		cin >> cels;
-		answfareng = cels * 1.8 + 32;
-		cout << answfareng << endl;
-	}
-	else if (user == 2) {
-		cin >> foreng;
-		answcels = (foreng - 32) * 5/9;
-		cout << answcels << endl;
-	}
-
-
+float value(int a) {
+    float b;
+    b = (a - 32)*5/9;
+    return b;
 }
+int main()
+{
+    setlocale(0, "rus");
+    std::cout << "ВВедите Фарингейт: ";
+    float a;
+    std::cin >> a;
+    std::cout << value(a);
+}
+	
+
+
+задание 2
+	#include <iostream>
+#include <string>
+
+float value(int a) {
+    float b;
+    b = 25.4 * a;
+    return b;
+}
+int main()
+{
+    setlocale(0, "rus");
+    std::cout << "Введите длину в дюймах: ";
+    float a;
+    std::cin >> a;
+    std::cout << value(a);
+}
+
+
+
+задание 3
+	
