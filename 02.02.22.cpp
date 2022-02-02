@@ -86,7 +86,7 @@ int main()
 Задание 3
 
   
-  #include <iostream>
+#include <iostream>
 #include <Windows.h>
 
 
@@ -102,7 +102,7 @@ int main() {
 	int randomNumber2 = rand() % 6;
 	int brosok;
 	int brosok2;
-	int chislo;
+	int summa;
 	std::cout << "Нажмите 1 чтобы бросить кубик" << std::endl;
 
 	for (int i = 0; i < 4; i++) {
@@ -190,7 +190,7 @@ int main() {
 
 		}
 
-
+		summa = brosok + brosok2;
+		std::cout<< "Cумма" << summa << std::endl;
 	}
 }
-  
