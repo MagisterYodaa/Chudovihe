@@ -1,3 +1,4 @@
+Задание 1
 #include <iostream>
 #include <Windows.h>
 
@@ -41,3 +42,10 @@ int main() {
 	z = e * e * p;
 	std::cout << z << std::endl;
 }
+
+
+
+Задание 5
+	
+	
+	
