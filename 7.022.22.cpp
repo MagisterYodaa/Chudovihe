@@ -66,3 +66,22 @@ int main() {
 	}
 	
 	
+
+Задание 4
+		int a, b, c;
+	std::cin >> a >> b >> c;
+	if (a == b) {
+		std::cout << "а и b равны!" << std::endl;
+	}
+	else if (a == c) {
+		std::cout << "а и c равны!" << std::endl;
+	}
+	else if (b == c) {
+		std::cout << "b и c равны!" << std::endl;
+	}
+	else {
+		std::cout << "их нет" << std::endl;
+	}
+
+
+Задание 6
