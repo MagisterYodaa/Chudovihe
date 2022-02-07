@@ -47,5 +47,22 @@ int main() {
 
 Задание 5
 	
+
+	std::cout << "Звездочки (O_o)" << std::endl;
+	for (int i = 1; i <= 4; i++) {
+		if (i % 2 == 0) {
+			for (int i = 1; i <= 4; i++) {
+				std::cout << "*";
+				std::cout << "*";
+			}
+		}
+		else {
+			for (int i = 1; i <= 4; i++) {
+				std::cout << "*";
+				std::cout << "*";
+			}
+		}
+		std::cout << std::endl;
+	}
 	
 	
