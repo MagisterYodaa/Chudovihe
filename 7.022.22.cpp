@@ -85,3 +85,18 @@ int main() {
 
 
 Задание 6
+	
+	
+Задание 2
+	int main() {
+
+	int x = 8;
+	int y = 5;
+	int z = 2;
+	int g;
+
+	g = 8 * 5 / (z * z);
+	std::cout << g << std::endl;
+}
+
+
