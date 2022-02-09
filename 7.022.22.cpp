@@ -99,4 +99,11 @@ int main() {
 	std::cout << g << std::endl;
 }
 
+Задание 3
+	
+	int a, b, c;
+	bool x{ false }, y{ false };	
+	
+	if (a < b && b < c) {
 
+	}
