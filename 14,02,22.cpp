@@ -68,3 +68,30 @@ int main() {
 		std::cout<< i <<std::endl;
 	}
 	*/
+
+
+
+
+
+
+
+	//int a;                                                (формула)
+	//int n;
+	//int p;
+	//std::cin >> n;
+	//std::cin >> a;
+	//for (int i = 0; i <= n; i++) {
+	//	
+	//	p = (a + i) * (a + i) * n * (a + i) * (a + i);
+	//	
+	//}
+	//std::cout << p << std::endl;
+
+
+
+
+
+
+
+
+}
