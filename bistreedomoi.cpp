@@ -107,3 +107,28 @@ int main() {
 }
 
 Задание 6
+#include <iostream>
+#include<cmath>
+
+	int f(int x, int y)
+	{
+		return x + y;
+	}
+
+	double f(double a1, double a2, double b = 0)
+	{
+		b = a1 - a2;
+		return b;
+	}
+
+int main() {
+	int u{ 0 }, s1{ 3 }, s2{ 4 };
+	double v{ 10 }, d1{ 20.5 }, d2{ 10.5 };
+	u = f(s1, s2);
+	v = f(d1, d2, v);
+
+	std::cout << u << std::endl;
+	std::cout << v << std::endl;
+}
+
+Задание 7
