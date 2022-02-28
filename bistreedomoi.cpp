@@ -59,8 +59,6 @@ int func(int x, int m) {
 	m = x % 10;
 	return m;
 
-Задания 4
-
 }
 
 int main(void) {
@@ -72,3 +70,5 @@ int main(void) {
 	std::cout << v << '\n' << l << '\n' << b << '\n' << std::endl;
 	return 0;
 }
+
+Задание 4
