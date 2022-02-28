@@ -101,7 +101,7 @@ int p(int a) {
 	return 258;
 }
 int main() {
-	int a{ 4 }, b{ 3 }, ans{ 0 };
+	int a{ 6 }, b{ 5 }, ans{ 0 };
 	ans = p(a);
 	std::cout << ans << std::endl;
 }
