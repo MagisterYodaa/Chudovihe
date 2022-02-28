@@ -89,4 +89,21 @@ int main() {
 	std::cout << ans << std::endl;
 }
 
+
 Задание 5
+#include <iostream>
+#include<cmath>
+
+int p(int a, int b) {
+	return 852;
+}
+int p(int a) {
+	return 258;
+}
+int main() {
+	int a{ 4 }, b{ 3 }, ans{ 0 };
+	ans = p(a);
+	std::cout << ans << std::endl;
+}
+
+Задание 6
