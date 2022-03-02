@@ -43,3 +43,40 @@ int main() {
 
 Задание 2
 	
+#include <iostream>
+#include<cmath>
+
+int fib(int n) {
+	int sum;
+	std::cin >> sum;
+	if (n == 0) {
+		std::cout << "Это нолик" << std::endl;
+	}
+	else {
+		return n + sum;
+	}
+}
+
+int fib2(int n) {
+	int um;
+	std::cin >> um;
+	if (n == 0) {
+		std::cout << "Это нолик" << std::endl;
+	}
+	else {
+		return n * um;
+	}
+}
+
+int main() {
+	std::cout << "Snachalo slojenie" << std::endl;
+	std::cout << fib(3) << std::endl;
+	std::cout << "A teper umnojenie" << std::endl;
+	std::cout << fib2(2) << std::endl;
+
+}
+
+
+Заание 3
+	
+
