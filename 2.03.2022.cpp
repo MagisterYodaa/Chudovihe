@@ -41,7 +41,7 @@ int main() {
 }
 
 
-Задание 2
+Задание 2,3
 	
 #include <iostream>
 #include<cmath>
@@ -77,6 +77,6 @@ int main() {
 }
 
 
-Заание 3
+Заание 4
 	
 
