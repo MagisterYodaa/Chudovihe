@@ -79,4 +79,34 @@ int main() {
 
 Заание 4
 	
+#include <iostream>
+#include <Windows.h>
+
+
+int fib(int n) {
+	int sum;
+	std::cin >> sum;
+	if (n < sum) {
+		std::cout << "2 введеное число больше чем 1" << std::endl;
+		return 0;
+	}
+	if (n > sum) {
+		std::cout << "1 введеное число больше чем 2" << std::endl;
+		return 0;
+	}
+	else {
+		return 0;
+	}
+}
+
+int main() {
+	SetConsoleCP(1251);
+	SetConsoleOutputCP(1251);
+	std::cout << "Snachalo slojenie" << std::endl;
+	std::cout << fib(2) << std::endl;
+}
+
+
+
+
 
