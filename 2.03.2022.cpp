@@ -142,7 +142,35 @@ int main() {
 
 Задание 6
 	
+#include <iostream>
+#include <Windows.h>
+using namespace std;
 
+
+void massiv()
+{
+	int a[10];
+	int i;
+	int sum = 0;
+	srand(time(0));
+	for (i = 0; i < 10; i++)
+		a[i] = 1 + rand() % 25;
+	for (i = 0; i < 10; i++)
+		cout << a[i] << " "; 
+	cout << endl;
+
+	for (i = 0; i < 10; i++) {
+		sum += a[i];
+	}
+
+	cout << sum << '\n';
+}
+
+int main()
+{
+	massiv();
+	cout << "\n";
+}
 
 
 
