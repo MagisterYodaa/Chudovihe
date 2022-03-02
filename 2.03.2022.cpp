@@ -109,6 +109,39 @@ int main() {
 
 Задание 5
 	
+#include <iostream>
+#include <Windows.h>
+
+
+int fib(int pervoe, int vtoroe, int tretie) {
+	std::cin >> pervoe;
+	std::cin >> vtoroe;
+	std::cin >> tretie;
+
+	if (pervoe > vtoroe && pervoe > tretie ) {
+		std::cout << "Первое число самое большое!" << std::endl;
+	}
+	if (vtoroe > pervoe && vtoroe > tretie) {
+		std::cout << "Второе число самое большое!" << std::endl;
+	}
+	else if (tretie > pervoe && tretie > vtoroe) {
+		std::cout << "Третие число самое большое!" << std::endl;
+	}
+	else {
+		return 0;
+	}
+}
+
+int main() {
+	SetConsoleCP(1251);
+	SetConsoleOutputCP(1251);
+	std::cout << "Напишите ваши числа!!" << std::endl;
+	std::cout << fib(1 , 2 , 3) << std::endl;
+}
+
+
+Задание 6
+	
 
 
 
