@@ -205,3 +205,27 @@ int main()
 	cout << "\n";
 }
 
+Задание 9
+	
+#include <iostream>
+#include <Windows.h>
+
+bool evenodd(int x)
+{
+	return x % 2;
+}
+
+int prost(int z)
+{
+	for (int i = 2; i <= z / 2; i++)
+	{
+		if ((z % i) == 0)
+		{
+			return 1;
+		}
+	}
+	return 0;
+}
+int main() {
+	std::cout << evenodd(88) << std::endl;
+}
