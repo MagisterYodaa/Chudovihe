@@ -173,4 +173,35 @@ int main()
 }
 
 
+Задание 7
+
+#include <iostream>
+#include <Windows.h>
+using namespace std;
+
+
+void massiv()
+{
+	int a[5];
+	int i;
+	int um = 1;
+	srand(time(0));
+	for (i = 0; i < 5; i++)
+		a[i] = 1 + rand() % 25;
+	for (i = 0; i < 5; i++)
+		cout << a[i] << " "; 
+	cout << endl;
+
+	for (i = 0; i < 5; i++) {
+		um *= a[i];
+	}
+
+	cout << um << '\n';
+}
+
+int main()
+{
+	massiv();
+	cout << "\n";
+}
 
