@@ -140,7 +140,7 @@ int main() {
 }
 
 
-Задание 6
+Задание 6,8
 	
 #include <iostream>
 #include <Windows.h>
