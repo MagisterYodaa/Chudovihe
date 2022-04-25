@@ -129,3 +129,78 @@ void fraction::show()
 
                               КОНЕЦ                    fraction.cpp                      Конец
                               
+
+
+
+
+
+
+                       НАЧОЛО                         sourse.cpp                   НАЧАЛО
+		       
+		       
+#include <iostream>
+using namespace std;
+#include "fraction.h"
+
+int main()
+{
+	fraction first(3, 5), second(1, 2), third;
+
+	third = first + second;
+	third.show();
+	cout << third << endl << endl;
+
+	third = first - second;
+	third.show();
+	cout << third << endl << endl;
+
+	third = first * second;
+	third.show();
+	cout << third << endl << endl;
+
+	third = first / second;
+	third.show();
+	cout << third << endl << endl;
+	return 0;
+}
+
+
+
+
+                            КОНЕЦ                   Sourse.cpp                КОНЕЦ
+			    
+			    
+			    
+			 
+		
+		
+                           НАЧАЛО                   fraction.h                НАЧАЛО
+			   
+			   
+			   
+#pragma once
+#include <iostream>
+class fraction
+{
+	private:
+		unsigned int numerator;
+		unsigned int denominator;
+
+	public:
+		fraction();
+		fraction(const unsigned int num, const unsigned int den);
+		fraction operator+(const fraction& obj);
+		fraction operator-(const fraction& obj);
+		fraction operator*(const fraction& obj);
+		fraction operator/(const fraction& obj);
+		fraction operator+(const int& value);
+		fraction operator-(const int& value);
+		operator float();
+		void show();
+};
+
+
+
+
+
+                              КОНЕЦ                fraction.h                КОНЕЦ
